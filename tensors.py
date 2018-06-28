@@ -7,7 +7,7 @@ batch_size, input_dim, hidden_dim, output_dim = 64, 100, 1000, 10
 
 # Random input and output data
 x = torch.randn(batch_size, input_dim, device = device, dtype = dtype)
-y = torch.randn(hidden_dim, output_dim, device = device, dtype = dtype)
+y = torch.randn(batch_size, output_dim, device = device, dtype = dtype)
 
 # Initialize with random weights
 w1 = torch.randn(input_dim, hidden_dim, device = device, dtype = dtype)
