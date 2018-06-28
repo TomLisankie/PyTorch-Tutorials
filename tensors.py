@@ -23,7 +23,7 @@ for t in range(epochs):
 
     # Compute and print loss
     loss = (y_pred - y).pow(2).sum().item()
-    print(t, loss)
+    print(t + 1, loss)
 
     # Backprop to compute gradients of w1 and w2 with respect to the loss
     grad_y_pred = 2.0 * (y_pred - y)
